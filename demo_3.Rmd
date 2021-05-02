@@ -26,6 +26,7 @@ endnote: no
 sansitup: FALSE
 header-includes:
   - \usepackage{longtable}
+  - \usepackage{hologo}
   - \LTcapwidth=.95\textwidth
   - \linespread{1.05}
   - \usepackage{hyperref}
@@ -49,7 +50,7 @@ mean_data = mean(data)
 
 This is an inline `R` code: Hence, the mean of the data is of `r mean_data`.
 
-This is a $\LaTeX$ equation 
+This is a \hologo{LaTeX} equation 
 
 $$
 f(x)=\frac{1}{\sigma \sqrt{2 \pi}} \mathrm{e}^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}
