@@ -370,7 +370,7 @@ slides > slide {
 
 /* H1 fonts  */
 .title-slide h1 {
-  color: #ffffff;
+  color: black;
   font-weight: normal;
   font-size: 45px;
   padding: 20px;
@@ -381,7 +381,7 @@ slides > slide {
 
 /* H2 fonts */
 .title-slide h2 {
-  color: black !important; /* first of type is master brand red */
+  color: black; /*!important; /* first of type is master brand red */
   font-size: 35px;
   padding-left: 20px;
   padding-bottom: 10px;
@@ -389,6 +389,7 @@ slides > slide {
   text-align: left;
   vertical-align: middle;
 }
+
 
 /* H3 fonts */
 .title-slide h3 {
@@ -419,8 +420,8 @@ blockquote, .blockquote {
   border-bottom: solid 2px #0148A4;
   border-right: solid 2px #0148A4;
   box-shadow: 0 0 6px rgba(0,0,0,0.5);
-  /* background-color: #e64626; */
-  color: #e64626;
+  /* background-color: #e64626; 
+  /*color: #e64626;*/
   padding: 0.5em;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
