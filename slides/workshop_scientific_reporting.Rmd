@@ -85,11 +85,11 @@ library(magrittr)
 - Opening and compiling a `RMarkdown (.Rmd)` document from `RStudio` and the `YAML`
 - Your turn ! (individual exercise)  😱
 - Essentials elements for scientific reporting
-- Interactive elements
 - Your turn ! (group exercise) 😱
 - Tools for Scientific reporting
+- Interactive elements
 - Templates and advanced customization options
-- Q&A
+- Q&A 🙋 ❓
 
 
 ---
@@ -255,11 +255,9 @@ bibliography: biblio.bib
 ---
 ```
 
-Since compiling a `.Rmd` document in `.pdf` requires $\LaTeX$, and that you may not all have $\LaTeX$ already installed, we will mostly consider compilation in `.html` for the presentation. **Note that installing $\LaTeX$ and linking it to `RStudio` is a simple and straighforward procedure and that most elements discussed today can be included in `.pdf`-compiled `Rmarkdown` document**
+Since compiling a `.Rmd` document in `.pdf` requires $\LaTeX$, and that you may not all have $\LaTeX$ already installed, we will mostly consider compilation in `.html` for the presentation. **Note that installing $\LaTeX$ and linking it to `RStudio` is a simple and straightforward procedure and that most elements discussed today can be included in `.pdf`-compiled `Rmarkdown` document**
 
 Find a detailed procedure to install the `tinytex` $\LaTeX$ distribution at this webpage [Install LaTeX (TinyTeX) for PDF reports](https://bookdown.org/yihui/rmarkdown-cookbook/install-latex.html) (required if you want to do the project with `RMarkdown`).
-
-
 
 
 ---
@@ -551,6 +549,87 @@ For more info see [the icon `r icon::fontawesome("github")` repo](https://github
 
 ---
 
+# `RMarkdown playground` web app
+
+Find the app [here](https://dal-unige.shinyapps.io/rmd_app/).
+
+```{r, echo = F}
+knitr::include_url("https://dal-unige.shinyapps.io/rmd_app/", height = "450px")
+```
+
+
+---
+class: inverse, center, middle
+
+# Your turn! (Group exercise)
+
+&nbsp; 
+
+.center[In group and working in breakout rooms, try to compile a `.Rmd` document with a title, author, date, compiled `R` code, and a statistical graph (e.g. boxplot, histogram, barplots, etc) of your choice. You can also try to add other elements discussed (tables, images, etc). Show it to the audience if interested!]
+
+.center[Also, try to reproduce this equation in your document: 
+
+$$s^{2}=\frac{\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}}{n-1}$$]
+
+Hint: use $\LaTeX$ commands `^`,`_`, `\sum{}`,  `\frac{}{}` and `\bar{}`
+
+
+---
+
+class: inverse, center, middle
+
+# Tools for Scientific reporting
+
+
+---
+# `r icon::fontawesome("github") ` GitHub for collaborative writing/programming
+
+
+
+[GitHub](https://github.com/) is a platform which enables sharing and collaboration for software development. It provides a version control system using `Git`.
+
+
+<div align="center">
+![:scale 40%](assets/github.png)
+</div>
+
+
+.content-box-blue[
+Create an account on [GitHub](https://github.com/) and install [GitHub desktop](https://desktop.github.com/). You can then follow this [serie](https://www.youtube.com/watch?v=XBzUqQbHHhw) of three videos that presents a detailled step-by-step introduction to using GitHub with Github Desktop. You can also read  [this introduction to GitHub](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/creating-your-first-repository-using-github-desktop).
+]
+
+
+---
+# Mathpix to easily insert math equation in $\LaTeX$
+
+<blockquote>
+
+Mathpix Snip digitizes handwritten or printed text, and copies outputs to the clipboard that can be pasted into LaTeX editors like Overleaf, Markdown editors like Typora, Microsoft Word, and more. 
+.right[-- <cite>Mathpix Snip</cite>]
+</blockquote>
+
+
+&nbsp; 
+
+<div align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Pc_6aKPYBwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+Find more informations [here](https://mathpix.com/).
+
+
+---
+# `xaringan::infinite_moon_reader()` for live preview of your document
+
+Instant preview without fully rebuilding HTML, and the linked navigation
+
+<div align="center">
+![:scale 70%](assets/gif_inf_m_r.gif)
+</div>
+
+
+---
+
 class: inverse, center, middle
 
 # Interactive elements
@@ -682,85 +761,6 @@ You can find a gallery of `html widgets` for `R` [here](https://www.htmlwidgets.
 <iframe width="760" height="415" src="https://www.youtube.com/embed/RALtocwIcWI?start=391" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 
----
-
-# `RMarkdown playground` web app
-
-Find the app [here](https://dal-unige.shinyapps.io/rmd_app/).
-
-```{r, echo = F}
-knitr::include_url("https://dal-unige.shinyapps.io/rmd_app/", height = "450px")
-```
-
-
----
-class: inverse, center, middle
-
-# Your turn! (Group exercise)
-
-&nbsp; 
-
-.center[In group and working in breakout rooms, try to compile a `.Rmd` document with a title, author, date, compiled `R` code, and a statistical graph (e.g. boxplot, histogram, barplots, etc) of your choice. You can also try to add other elements discussed (tables, gif, youtube video, etc). Show it to the audience if interested!]
-
-.center[Also, try to reproduce this equation in your document: 
-
-$$s^{2}=\frac{\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}}{n-1}$$]
-
-Hint: use $\LaTeX$ commands `^`,`_`, `\sum{}`,  `\frac{}{}` and `\bar{}`
-
-
----
-
-class: inverse, center, middle
-
-# Tools for Scientific reporting
-
-
----
-# `r icon::fontawesome("github") ` GitHub for collaborative writing/programming
-
-
-
-[GitHub](https://github.com/) is a platform which enables sharing and collaboration for software development. It provides a version control system using `Git`.
-
-
-<div align="center">
-![:scale 40%](assets/github.png)
-</div>
-
-
-.content-box-blue[
-Create an account on [GitHub](https://github.com/) and install [GitHub desktop](https://desktop.github.com/). You can then follow this [serie](https://www.youtube.com/watch?v=XBzUqQbHHhw) of three videos that presents a detailled step-by-step introduction to using GitHub with Github Desktop. You can also read  [this introduction to GitHub](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/creating-your-first-repository-using-github-desktop).
-]
-
-
----
-# Mathpix to easily insert math equation in $\LaTeX$
-
-<blockquote>
-
-Mathpix Snip digitizes handwritten or printed text, and copies outputs to the clipboard that can be pasted into LaTeX editors like Overleaf, Markdown editors like Typora, Microsoft Word, and more. 
-.right[-- <cite>Mathpix Snip</cite>]
-</blockquote>
-
-
-&nbsp; 
-
-<div align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Pc_6aKPYBwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-Find more informations [here](https://mathpix.com/).
-
-
----
-# `xaringan::infinite_moon_reader()` for live preview of your document
-
-Instant preview without fully rebuilding HTML, and the linked navigation
-
-<div align="center">
-![:scale 70%](assets/gif_inf_m_r.gif)
-</div>
 
 ---
 class: inverse, center, middle
@@ -786,13 +786,16 @@ In `RStudio` you can then go to `File` > `New File` > `R Markdown` and select an
 ---
 # Customization and template for `.pdf` compilation
 
+### Opening a new `.Rmd` document based on a template
+
 .center[![:scale 80%](assets/gif_template_pdf.gif)]
+
 
 
 
 ---
 
-# Themes
+# Themes  for `.html` compilation
 
 You can specify themes with the `YAML` option `theme`. `Rmarkdown` provide built-in themes but many themes are accessible by using external packages available on `CRAN` or on  GitHub. Two packages offer several templates:
 
@@ -816,7 +819,7 @@ bibliography: biblio.bib
 ```
 
 ---
-# Themes
+# Themes  for `.html` compilation
 
 Find a non exhaustive gallery of available themes [here](https://www.datadreaming.org/post/r-markdown-theme-gallery/).
 
@@ -833,7 +836,8 @@ Find a non exhaustive gallery of available themes [here](https://www.datadreamin
 
 
 ---
-# Custom `CSS`
+# Custom `CSS` for `.html` compilation
+
 
 ```{r,eval = F}
 output:
@@ -861,7 +865,7 @@ etc...
 ---
 
 
-# `HTML` and `CSS` inline elements
+# `HTML` and `CSS` inline elements for `.html` compilation
 ### Pop-up menu and color box
 
 ```{r, eval =F}
@@ -874,7 +878,7 @@ More info
 ```
 
 
-.center[![:scale 40%](assets/button_1.gif)]
+.center[![:scale 30%](assets/button_1.gif)]
 
 
 ```{r, eval =F}
@@ -904,6 +908,17 @@ More info
 - [Pimp my RMD: a few tips for R Markdown](https://holtzy.github.io/Pimp-my-rmd/)
 
 - [Rmarkdown templates for PDF compilation](https://github.com/svmiller/stevetemplates)
+
+---
+# Class Evaluation
+
+As this workshop is part of a pedagogical training organised by the Pôle de Soutien à l'Enseignement et à l'Apprentissage, we would appreciate if you could take 5 minutes to fill the survey available [here](). 
+
+The results of this evaluation will allow me to know how you judge the current teaching and the adaptations that have been made in view of the situation and to find, if necessary, possibilities for improvement. 
+
+By answering these questions, you will contribute to the improvement of the teaching and curricula offered at the University of Geneva.
+
+
 
 
 ---

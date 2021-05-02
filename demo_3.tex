@@ -106,12 +106,8 @@
 \bibliographystyle{apsr}
 
 
-\title{Another Pandoc Markdown Article Starter and
-Template\thanks{Replication files are available on the author's Github
-account (\url{http://github.com/svmiller/svm-r-markdown-templates}).
-\textbf{Current version}: May 02, 2021; \textbf{Corresponding author}:
-\href{mailto:steven.v.miller@gmail.com}{\nolinkurl{steven.v.miller@gmail.com}}.}}
-\author{true \and true \and true}
+\title{Title of the semester project}
+\author{true \and true \and true \and true}
 \date{May 02, 2021}
 
 % Jesus, okay, everything above this comment is default Pandoc LaTeX template. -----
@@ -146,11 +142,7 @@ account (\url{http://github.com/svmiller/svm-r-markdown-templates}).
 \makeatother
 
 
-\title{Another Pandoc Markdown Article Starter and
-Template\thanks{Replication files are available on the author's Github
-account (\url{http://github.com/svmiller/svm-r-markdown-templates}).
-\textbf{Current version}: May 02, 2021; \textbf{Corresponding author}:
-\href{mailto:steven.v.miller@gmail.com}{\nolinkurl{steven.v.miller@gmail.com}}.}  }
+\title{Title of the semester project }
 
 \date{}
 
@@ -191,12 +183,11 @@ account (\url{http://github.com/svmiller/svm-r-markdown-templates}).
 \makeatother
 \hypersetup{breaklinks=true,
             bookmarks=true,
-            pdfauthor={Steven V. Miller (Clemson University) and A
-Second Author Who Did Less Work (The Ohio State University) and A
-Graduate Student (University of Alabama)},
-             pdfkeywords = {pandoc, r markdown, knitr},
-            pdftitle={Another Pandoc Markdown Article Starter and
-Template},
+            pdfauthor={Student 1 (University of Geneva) and Student
+2 (University of Geneva) and Student 3 (University of
+Geneva) and Student 4 (University of Geneva)},
+             pdfkeywords = {},
+            pdftitle={Title of the semester project},
             colorlinks=true,
             citecolor=blue,
             urlcolor=blue,
@@ -256,11 +247,13 @@ Template},
 
 {
    \vskip 13.5pt\relax \normalsize\fontsize{11}{12}
-   \MakeUppercase{Steven V. Miller}, \small{Clemson
-University}   \par \vskip -3.5pt \MakeUppercase{A Second Author Who Did
-Less Work}, \small{The Ohio State
-University}   \par \vskip -3.5pt \MakeUppercase{A Graduate
-Student}, \small{University of Alabama}   
+   \MakeUppercase{Student 1}, \small{University of
+Geneva}   \par \vskip -3.5pt \MakeUppercase{Student
+2}, \small{University of
+Geneva}   \par \vskip -3.5pt \MakeUppercase{Student
+3}, \small{University of
+Geneva}   \par \vskip -3.5pt \MakeUppercase{Student
+4}, \small{University of Geneva}   
 
 }
 
@@ -269,36 +262,6 @@ Student}, \small{University of Alabama}
 
 
 
-
-
-
-
-\begin{abstract}
-
-%    \hbox{\vrule height .2pt width 39.14pc}
-
-    \vskip 8.5pt % \small
-
-\noindent \small{Lorem ipsum dolor sit amet, consectetur adipiscing
-elit. Donec sit amet libero justo. Pellentesque eget nibh ex. Aliquam
-tincidunt egestas lectus id ullamcorper. Proin tellus orci, posuere sed
-cursus at, bibendum ac odio. Nam consequat non ante eget aliquam. Nulla
-facilisis tincidunt elit. Nunc hendrerit pellentesque quam, eu imperdiet
-ipsum porttitor ut. Interdum et malesuada fames ac ante ipsum primis in
-faucibus. Suspendisse potenti. Duis vitae nibh mauris. Duis nec sem sit
-amet ante dictum mattis. Suspendisse diam velit, maximus eget commodo
-at, faucibus et nisi. Ut a pellentesque eros, sit amet suscipit eros.
-Nunc tincidunt quis risus suscipit vestibulum. Quisque eu fringilla
-massa.}
-
-
-\vskip 8.5pt \noindent \emph{Keywords}: pandoc, r markdown, knitr \par
-
-%    \hbox{\vrule height .2pt width 39.14pc}
-
-
-
-\end{abstract}
 
 
 \vskip -8.5pt
@@ -315,61 +278,50 @@ massa.}
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
 
-\kant[1]
-
-\hypertarget{a-subsection-in-the-introduction}{%
-\subsection{A Subsection in the
-Introduction}\label{a-subsection-in-the-introduction}}
-
-\kant[2]
-
-This is an R Markdown document. Markdown is a simple formatting syntax
-for authoring HTML, PDF, and MS Word documents. For more details on
-using R Markdown see \url{http://rmarkdown.rstudio.com}.
-
-When you click the \textbf{Knit} button a document will be generated
-that includes both content as well as the output of any embedded R code
-chunks within the document. You can embed an R code chunk like this:
+This is an \texttt{R} code chunk
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\FunctionTok{summary}\NormalTok{(cars)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-\end{verbatim}
-
-\hypertarget{results}{%
-\section{Results}\label{results}}
-
-\kant[24]
-
-\hypertarget{including-plots}{%
-\subsection{Including Plots}\label{including-plots}}
-
-You can also embed plots, for example:
-
-\includegraphics{demo_3_files/figure-latex/pressure-1.pdf}
-
-Note that the \texttt{echo\ =\ FALSE} parameter was added to the code
-chunk to prevent printing of the R code that generated the plot.
-
-\kant[25]
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{plot}\NormalTok{(mtcars)}
+\NormalTok{data}\OtherTok{=}\FunctionTok{rnorm}\NormalTok{(}\DecValTok{100}\NormalTok{)}
+\FunctionTok{plot}\NormalTok{(}\FunctionTok{density}\NormalTok{(data), }\AttributeTok{main =} \StringTok{""}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
 \includegraphics{demo_3_files/figure-latex/unnamed-chunk-1-1.pdf}
+
+This is a evaluated but not displayed \texttt{R} code chunk
+
+This is an inline \texttt{R} code: Hence, the mean of the data is of
+-0.057781.
+
+This is a \(\LaTeX\) equation
+
+\[
+f(x)=\frac{1}{\sigma \sqrt{2 \pi}} \mathrm{e}^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}
+\]
+
+\hypertarget{analysis}{%
+\section{Analysis}\label{analysis}}
+
+\hypertarget{description-of-the-task}{%
+\section{Description of the task}\label{description-of-the-task}}
+
+\hypertarget{motivation}{%
+\section{Motivation}\label{motivation}}
+
+\hypertarget{results-description-and-interpretation}{%
+\section{Results: description and
+interpretation}\label{results-description-and-interpretation}}
+
+\hypertarget{were-these-results-expected-discussion}{%
+\section{Were these results expected:
+discussion}\label{were-these-results-expected-discussion}}
+
+\hypertarget{statistical-methods-used}{%
+\section{Statistical methods used}\label{statistical-methods-used}}
+
+\hypertarget{acquired-skills-during-the-term-project}{%
+\section{Acquired skills during the term
+project}\label{acquired-skills-during-the-term-project}}
 
 \end{document}

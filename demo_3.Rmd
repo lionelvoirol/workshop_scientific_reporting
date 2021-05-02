@@ -5,17 +5,16 @@ output:
     dev: cairo_pdf
     keep_tex: true
 biblio-style: apsr
-title: "Another Pandoc Markdown Article Starter and Template"
-thanks: "Replication files are available on the author's Github account (http://github.com/svmiller/svm-r-markdown-templates). **Current version**: `r format(Sys.time(), '%B %d, %Y')`; **Corresponding author**: steven.v.miller@gmail.com."
+title: "Title of the semester project"
 author:
-- name: Steven V. Miller
-  affiliation: Clemson University
-- name: A Second Author Who Did Less Work
-  affiliation: The Ohio State University
-- name: A Graduate Student
-  affiliation: University of Alabama
-abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet libero justo. Pellentesque eget nibh ex. Aliquam tincidunt egestas lectus id ullamcorper. Proin tellus orci, posuere sed cursus at, bibendum ac odio. Nam consequat non ante eget aliquam. Nulla facilisis tincidunt elit. Nunc hendrerit pellentesque quam, eu imperdiet ipsum porttitor ut. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse potenti. Duis vitae nibh mauris. Duis nec sem sit amet ante dictum mattis. Suspendisse diam velit, maximus eget commodo at, faucibus et nisi. Ut a pellentesque eros, sit amet suscipit eros. Nunc tincidunt quis risus suscipit vestibulum. Quisque eu fringilla massa."
-keywords: "pandoc, r markdown, knitr"
+- name: Student 1
+  affiliation: University of Geneva
+- name: Student 2
+  affiliation: University of Geneva
+- name: Student 3
+  affiliation: University of Geneva
+- name: Student 4
+  affiliation: University of Geneva
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 geometry: margin=1in
 mainfont: cochineal
@@ -32,46 +31,42 @@ header-includes:
   - \usepackage{hyperref}
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-
-
 # Introduction
 
-\kant[1]
+This is an `R` code chunk
 
-## A Subsection in the Introduction
-
-\kant[2]
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>. 
-
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+```{r, fig.width=4, fig.height=3}
+data=rnorm(100)
+plot(density(data), main = "")
 ```
 
-# Results
+This is a evaluated but not displayed `R` code chunk
 
-\kant[24]
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r, echo =F, eval =T}
+mean_data = mean(data)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
+This is an inline `R` code: Hence, the mean of the data is of `r mean_data`.
 
-\kant[25]
+This is a $\LaTeX$ equation 
 
-```{r}
-plot(mtcars)
-```
+$$
+f(x)=\frac{1}{\sigma \sqrt{2 \pi}} \mathrm{e}^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}
+$$
+
+# Analysis
+
+# Description of the task
+
+# Motivation
+
+# Results: description and interpretation
+
+# Were these results expected: discussion
+
+# Statistical methods used
+
+# Acquired skills during the term project
+
+# Additionnal element
