@@ -376,12 +376,29 @@ slides > slide {
     color: my-darkorange;
 }
 
+.pull-right-narrow {
+  float: right;
+  width: 20%;
+}
+
+.pull-right-wide {
+  float: right;
+  width: 75%;
+}
+
+.pull-left-narrow {
+  float: left;
+  width: 20%;
+}
+
+
+
 .title-slide {
     /* background-image: url(unige_2.svg);*/
   /* background-image: url(https://sydney.edu.au/etc/designs/corporate-commons/bower_components/corporate-frontend/dist/assets/img/USydLogo.svg); */
   background-position: 10% 90%;
   background-size: 190px;
-  background-color: #0816c2;
+  background-color: #0148A4;
   text-align:left;
   vertical-align: top;
   text-shadow: none;

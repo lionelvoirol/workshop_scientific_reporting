@@ -124,13 +124,39 @@ class: inverse, center, middle
 
 # What are the challenges in scientific writing that you can think of?
 
+
+---
+# Reproducibility in Science
+
+The **replication crisis** (also called the replicability crisis or reproducibility crisis) is an ongoing methodological crisis in Science in which it has been found that many scientific studies are difficult or impossible to replicate or reproduce. 
+
+&nbsp;
+
+<blockquote>
+More than 70% of researchers have tried and failed to reproduce another scientist's experiments, and more than half have failed to reproduce their own experiments. Those are some of the telling figures that emerged from Nature's survey of 1,576 researchers who took a brief online questionnaire on reproducibility in research.
+.right[-- <cite>Nature</cite>]
+</blockquote>
+
+
+---
+# Reproducibility in Science
+
+
+.center[![:scale 50%](assets/repro.jpeg)]
+
+---
+# Reproducibility in Science
+
+.center[![:scale 70%](assets/repro_4.png)]
+
+
 ---
 # Rmarkdown 
 
 
-`Rmarkdown` (or R Markdown) is a syntax for creating documents using literate programming. This technique allows the combination of document narrative and code computation to dynamically generate documents in different formats. This allows the creation of scientific reports that combine textual elements written by the authors with computed elements, such as visual representations or the results of a statistical analysis or data modelling. 
+`Rmarkdown` (or R Markdown) is a syntax for creating documents using literate programming. This technique allows the combination of document narrative and code computation to dynamically generate documents in different formats. **This allows the creation of scientific reports that combine textual elements written by the authors with computed elements, such as visual representations or the results of a statistical analysis or data modelling. **
 
-.center[![:scale 30%](assets/hex_rmd.png)]
+.center[![:scale 25%](assets/hex_rmd.png)]
 
 
 ---
@@ -659,9 +685,8 @@ class: inverse, center, middle
 ### `plotly` example
 
 
-
 .scroll-box-20[
-```{r, eval=T, echo=T, message=F, warning=F}
+```{r, eval=F, echo=T, message=F, warning=F}
 rm(list=ls())
 library(plotly)
 library(reshape2)
