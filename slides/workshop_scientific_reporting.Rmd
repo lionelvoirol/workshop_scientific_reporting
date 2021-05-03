@@ -170,7 +170,7 @@ In a nutshell, R Markdown stands on the shoulders of knitr and Pandoc. The forme
 </blockquote>
 
 
-.center[![:scale 70%](assets/workflow.png)]
+.center[![:scale 55%](assets/workflow.png)]
 
 ---
 
@@ -185,7 +185,7 @@ class: inverse, center, middle
 
 <!-- .center[![:scale 60%](assets/x_bar_ci_estimated_sd.gif)] -->
 
-.center[![:scale 80%](assets/demo_rmarkdown.gif)]
+.center[![:scale 75%](assets/demo_rmarkdown.gif)]
 
 
 ---
@@ -320,7 +320,7 @@ output:
 ```
 
 Which will produce, depending on the specified styling and other parameters:
-.center[![:scale 20%](assets/toc_1.png)]
+.center[![:scale 15%](assets/toc_1.png)]
 
 
 
@@ -396,7 +396,7 @@ You can align text in the columns to the left, right, or center by adding a colo
 
 # Printing an output as a table with `knitr::kable()`
 
-```{r}
+```{r, fig.height=5}
 data("iris")
 knitr::kable(iris[1:5,])
 ```
@@ -405,19 +405,19 @@ There are many more options that can be set to have particularly good looking ta
 
 ---
 # Extended table options with `knitr::kable()` and `kableExtra`
-```{r}
+```{r, fig.height=4}
 library(kableExtra)
-mtcars[1:4, 1:8] %>%
+mtcars[1:3, 1:8] %>%
   kbl() %>%
   kable_paper(full_width = F) %>%
-  column_spec(2, color = spec_color(mtcars$mpg[1:4]),
+  column_spec(2, color = spec_color(mtcars$mpg[1:3]),
               link = "https://haozhu233.github.io/kableExtra/") %>%
   column_spec(6, color = "white",
-              background = spec_color(mtcars$drat[1:4], end = 0.7),
-              popover = paste("am:", mtcars$am[1:4]))
+              background = spec_color(mtcars$drat[1:3], end = 0.7),
+              popover = paste("am:", mtcars$am[1:3]))
 ```
 
-&nbsp; 
+
 
 
 
@@ -467,7 +467,7 @@ The upper and lower confidence intervals are `r res_1` and `r res 2`.  #<<
 
 The upper and lower confidence intervals are `r res_1` and `r res_2`.
 
-```{r, fig.align="center", fig.height=4}
+```{r, fig.align="center", fig.height=3.5}
 set.seed(123)
 data = rnorm(500)
 mean_x = mean(data)
@@ -480,11 +480,11 @@ hist(data)
 
 # `knitr` options
 
-In a `.Rmd` document, you can specify multiple chunk option in the ````{r}` header of a `R` chunk of code.
+In a `.Rmd` document, you can specify multiple chunk option in the ````{r}` header of a `R` chunk of code. Chunk options are written in the form `tag=value` like `echo=T`. Find an exhaustive list of `knitr` options [here](https://yihui.org/knitr/options/#chunk-options).):
 
-Chunk options are written in the form `tag=value` like `echo=T`
 
-Here are the ones I use the most frequently (Find an exhaustive list of `knitr` options [here](https://yihui.org/knitr/options/#chunk-options).):
+
+
 
 | `knitr` chunk option      | Description | 
 | :---                   |                :--- |  
@@ -492,7 +492,7 @@ Here are the ones I use the most frequently (Find an exhaustive list of `knitr` 
 | `eval`               |                 Whether to evaluate a code chunk.        | 
 | `results`               |                 When set to 'hide', text output will be hidden; when set to 'asis', text output is written “as-is,”        | 
 | `cache`               |                 Whether to enable caching. If caching is enabled, the same code chunk will not be evaluated the next time the document is compiled (if the code chunk was not modified), which can save you time.        | 
-| `fig.align`, `fig.width`  & `fig.height`             |                 The (graphical device) size of R plots in inches. R plots in code chunks are first recorded via a graphical device in knitr, and then written out to files.        | 
+| `fig.align`, `fig.width` & `fig.height`             |                 The (graphical device) size of R plots in inches. R plots in code chunks are first recorded via a graphical device in knitr, and then written out to files.        | 
 
 
 
@@ -528,7 +528,7 @@ You can then insert citation as such:
 
 ### Copying `.bib` references from Google Scholar
 
-.center[![:scale 90%](assets/bib_copy.gif)]
+.center[![:scale 75%](assets/bib_copy.gif)]
 
 
 
@@ -635,7 +635,7 @@ Mathpix Snip digitizes handwritten or printed text, and copies outputs to the cl
 </blockquote>
 
 
-&nbsp; 
+
 
 <div align="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Pc_6aKPYBwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -650,7 +650,7 @@ Find more informations [here](https://mathpix.com/).
 Instant preview without fully rebuilding HTML, and the linked navigation
 
 <div align="center">
-![:scale 70%](assets/gif_inf_m_r.gif)
+![:scale 60%](assets/gif_inf_m_r.gif)
 </div>
 
 
@@ -937,9 +937,9 @@ More info
 ---
 # Class Evaluation
 
-As this workshop is part of a pedagogical training organised by the Pôle de Soutien à l'Enseignement et à l'Apprentissage, we would appreciate if you could take 5 minutes to fill the survey available [here](). 
+As this workshop is part of a pedagogical training organised by the Pôle de Soutien à l'Enseignement et à l'Apprentissage, we would appreciate if you could take 2 minutes to fill the survey available [here](https://docs.google.com/forms/d/e/1FAIpQLSdX6k8OEgpP8HJyAu907GDv2bNZY89JpwDikYm1wmz7u2rX_g/viewform?usp=sf_link). 
 
-The results of this evaluation will allow me to know how you judge the current teaching and the adaptations that have been made in view of the situation and to find, if necessary, possibilities for improvement. 
+The results of this evaluation will allow me to know how you judge this workshop and how I can improve my teaching.
 
 By answering these questions, you will contribute to the improvement of the teaching and curricula offered at the University of Geneva.
 
