@@ -288,6 +288,15 @@ Find a detailed procedure to install the `tinytex` $\LaTeX$ distribution at this
 
 ---
 
+class: inverse, center, middle
+
+# Your turn! (individual exercise)
+
+&nbsp; 
+
+Try to compile the default `.Rmd` template to a `.html` document from `RStudio`.
+
+---
 
 # Structure
 
@@ -778,7 +787,7 @@ You can find a gallery of `html widgets` for `R` [here](https://www.htmlwidgets.
 Musical break with Koffi Olomidé interpreted by Youssoupha
 
 ```{r, eval =F}
-<iframe width="560" height="255" src="https://www.youtube.com/embed/RALtocwIcWI?start=391" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="460" height="205" src="https://www.youtube.com/embed/RALtocwIcWI?start=391" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ```
 
 
