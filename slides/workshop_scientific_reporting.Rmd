@@ -2,7 +2,7 @@
 title: "Scientific reporting with Rmarkdown"
 subtitle: "An interactive class"
 author: "Lionel Voirol"
-date: "7 April 2021"
+date: "7 May 2021"
 output:
   xaringan::moon_reader:
     css: ["default", "assets/sydney-fonts.css", "assets/sydney.css"]
@@ -706,7 +706,7 @@ iris_plot
 
 <div align="center">
 
-```{r, eval=T, echo=F, message=F, warning=F, fig.align="center"}
+```{r, eval=F, echo=F, message=F, warning=F, fig.align="center"}
 rm(list=ls())
 library(plotly)
 library(reshape2)
