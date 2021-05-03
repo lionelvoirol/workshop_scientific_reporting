@@ -706,7 +706,7 @@ iris_plot
 
 <div align="center">
 
-```{r, eval=F, echo=F, message=F, warning=F, fig.align="center"}
+```{r, eval=T, echo=F, message=F, warning=F, fig.align="center"}
 rm(list=ls())
 library(plotly)
 library(reshape2)
