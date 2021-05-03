@@ -185,7 +185,7 @@ class: inverse, center, middle
 
 <!-- .center[![:scale 60%](assets/x_bar_ci_estimated_sd.gif)] -->
 
-.center[![:scale 75%](assets/demo_rmarkdown.gif)]
+.center[![:scale 75%](assets/demo_rmd_2.gif)]
 
 
 ---
@@ -350,7 +350,7 @@ Use `*` or `_` to emphasize things:
 
 ---
 
-Lists 
+# Lists 
 
 ```{r, eval =F}
 - The - character start an unsorted list.
@@ -731,7 +731,7 @@ iris_plot
 
 <div align="center">
 
-```{r, eval=F, echo=F, message=F, warning=F, fig.align="center"}
+```{r, eval=T, echo=F, message=F, warning=F, fig.align="center"}
 rm(list=ls())
 library(plotly)
 library(reshape2)
@@ -775,10 +775,10 @@ You can find a gallery of `html widgets` for `R` [here](https://www.htmlwidgets.
 
 ---
 # Youtube with `iframe` tag
-### Musical break with Koffi Olomidé interpreted by Youssoupha
+Musical break with Koffi Olomidé interpreted by Youssoupha
 
 ```{r, eval =F}
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RALtocwIcWI?start=391" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="255" src="https://www.youtube.com/embed/RALtocwIcWI?start=391" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ```
 
 
@@ -935,7 +935,7 @@ More info
 - [Rmarkdown templates for PDF compilation](https://github.com/svmiller/stevetemplates)
 
 ---
-# Class Evaluation
+# Workshop survey
 
 As this workshop is part of a pedagogical training organised by the Pôle de Soutien à l'Enseignement et à l'Apprentissage, we would appreciate if you could take 2 minutes to fill the survey available [here](https://docs.google.com/forms/d/e/1FAIpQLSdX6k8OEgpP8HJyAu907GDv2bNZY89JpwDikYm1wmz7u2rX_g/viewform?usp=sf_link). 
 
