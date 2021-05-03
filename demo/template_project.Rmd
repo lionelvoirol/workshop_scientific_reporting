@@ -34,7 +34,10 @@ header-includes:
   - \usepackage{hyperref}
 ---
 
-# Introduction
+# `RMarkdown` basics
+
+
+This is a citations: @efron1992bootstrap.   
 
 
 This is a displayed but not evaluated `R` code chunk
@@ -43,12 +46,12 @@ This is a displayed but not evaluated `R` code chunk
 print("I love R")
 ```
 
-This is an `R` code chunk, evaluated but not shown.
+This is an `R` code chunk, not displayed but evaluated.
 
-```{r, fig.width=5, fig.height=6, fig.align='center', echo =F}
+```{r, fig.width=5, fig.height=4, fig.align='center', echo =F}
 data=rnorm(100)
 par(mfrow=c(2,1))
-par(mar=c(1,4,1,2))
+par(mar=c(3,4,1,2))
 plot(density(data), main = "", ylab ="", xlab ="")
 boxplot(data, horizontal = T)
 par(mfrow=c(1,1))
@@ -66,6 +69,7 @@ $$
 
 This is a inline \hologo{LaTeX} equation: $\frac{1}{n} \sum_{i=1}^{n} a_{i}=\frac{a_{1}+a_{2}+\cdots+a_{n}}{n}$
 
+# Introduction
 
 # Analysis
 
