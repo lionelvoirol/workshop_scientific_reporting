@@ -49,7 +49,7 @@ library(magrittr)
 
 - Understand which technologies interoperate when compiling a `.Rmd` file
 
-- Acquire the ability to produce a simple scientific report using `RMarkdown` whcih contains essential elements (a structure, $\LaTeX$ equations, code, graphs, references) 
+- Acquire the ability to produce a simple scientific report using `RMarkdown` which contains essential elements (a structure, $\LaTeX$ equations, code, graphs, references) 
 
 - Be aware of the use of `Git` and `GitHub` for collaborative writing/programming and Mathpix to easily copy Math equation.
 
@@ -147,7 +147,14 @@ More than 70% of researchers have tried and failed to reproduce another scientis
 ---
 # Reproducibility in Science
 
-.center[![:scale 70%](assets/repro_4.png)]
+.center[![:scale 31%](assets/repro_1.jpg)]
+
+---
+
+# Reproducibility in Science
+
+.center[![:scale 37%](assets/repro_2.jpg)]
+
 
 
 ---
@@ -165,7 +172,7 @@ More than 70% of researchers have tried and failed to reproduce another scientis
 
 
 <blockquote>
-In a nutshell, R Markdown stands on the shoulders of knitr and Pandoc. The former executes the computer code embedded in Markdown, and converts R Markdown to Markdown. The latter renders Markdown to the output format you want (such as PDF, HTML, Word, and so on).
+In a nutshell, R Markdown stands on the shoulders of `knitr` and `Pandoc`. The former executes the computer code embedded in Markdown, and converts R Markdown to Markdown. The latter renders Markdown to the output format you want (such as PDF, HTML, Word, and so on).
 .right[-- <cite>R Markdown: The Definitive Guide</cite>]
 </blockquote>
 
@@ -501,7 +508,7 @@ In a `.Rmd` document, you can specify multiple chunk option in the ````{r}` head
 | `eval`               |                 Whether to evaluate a code chunk.        | 
 | `results`               |                 When set to 'hide', text output will be hidden; when set to 'asis', text output is written “as-is,”        | 
 | `cache`               |                 Whether to enable caching. If caching is enabled, the same code chunk will not be evaluated the next time the document is compiled (if the code chunk was not modified), which can save you time.        | 
-| `fig.align`, `fig.width` & `fig.height`             |                 The (graphical device) size of R plots in inches. R plots in code chunks are first recorded via a graphical device in knitr, and then written out to files.        | 
+| `fig.align`, `fig.width` & `fig.height`             |                 The (graphical device) size of R plots in inches.     | 
 
 
 
@@ -606,8 +613,7 @@ class: inverse, center, middle
 
 $$s^{2}=\frac{\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}}{n-1}$$]
 
-Hint: use $\LaTeX$ commands `^`,`_`, `\sum{}`,  `\frac{}{}` and `\bar{}`
-
+Hint: Use $\LaTeX$ commands `^`,`_`, `\sum{}`,  `\frac{}{}` and `\bar{}`. You can also use the web app presented before for reference.
 
 ---
 
@@ -787,12 +793,13 @@ You can find a gallery of `html widgets` for `R` [here](https://www.htmlwidgets.
 Musical break with Koffi Olomidé interpreted by Youssoupha
 
 ```{r, eval =F}
-<iframe width="460" height="205" src="https://www.youtube.com/embed/RALtocwIcWI?start=391" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<center>
+<iframe width="660" height="365" src="https://www.youtube.com/embed/RALtocwIcWI?start=391" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 ```
 
-
 <center>
-<iframe width="760" height="415" src="https://www.youtube.com/embed/RALtocwIcWI?start=391" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RALtocwIcWI?start=391" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 
 
@@ -822,7 +829,7 @@ In `RStudio` you can then go to `File` > `New File` > `R Markdown` and select an
 
 ### Opening a new `.Rmd` document based on a template
 
-.center[![:scale 80%](assets/gif_template_pdf.gif)]
+.center[![:scale 75%](assets/gif_template_pdf.gif)]
 
 
 
@@ -900,7 +907,6 @@ etc...
 
 
 # `HTML` and `CSS` inline elements for `.html` compilation
-### Pop-up menu and color box
 
 ```{r, eval =F}
 <button data-toggle="collapse" data-target="#demo">
