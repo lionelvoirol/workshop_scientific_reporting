@@ -89,6 +89,7 @@ library(magrittr)
 - Tools for Scientific reporting
 - Interactive elements
 - Templates and advanced customization options
+- Your turn ! (individual exercise)  😱
 - Q&A 🙋 ❓
 
 
@@ -290,7 +291,7 @@ bibliography: biblio.bib
 
 Since compiling a `.Rmd` document in `.pdf` requires $\LaTeX$, and that you may not all have $\LaTeX$ already installed, we will mostly consider compilation in `.html` for the presentation. **Note that installing $\LaTeX$ and linking it to `RStudio` is a simple and straightforward procedure and that most elements discussed today can be included in `.pdf`-compiled `Rmarkdown` document**
 
-Find a detailed procedure to install the `tinytex` $\LaTeX$ distribution at this webpage [Install LaTeX (TinyTeX) for PDF reports](https://bookdown.org/yihui/rmarkdown-cookbook/install-latex.html) (required if you want to do the project with `RMarkdown`).
+Find a detailed procedure to install the [`tinytex`](https://yihui.org/tinytex/) $\LaTeX$ distribution at this webpage [Install LaTeX (TinyTeX) for PDF reports](https://bookdown.org/yihui/rmarkdown-cookbook/install-latex.html) (required if you want to do the project with `RMarkdown`).
 
 
 ---
@@ -441,10 +442,13 @@ mtcars[1:3, 1:8] %>%
 ---
 # $\LaTeX$ support
 
+$\LaTeX$  is a software system for document preparation which facilitates the writing of complex mathematical formula.
+
+
+
 ### Centered Equation
 
 ```{r, eval =F}
-
 $$
 f(x)=\frac{1}{\sigma \sqrt{2 \pi}} \mathrm{e}^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}
 $$
@@ -467,7 +471,13 @@ Hence, we consider the vector $\boldsymbol{\theta} \in \boldsymbol{\Theta}$
 Hence, we consider the vector $\boldsymbol{\theta} \in \boldsymbol{\Theta}$
 
 
+---
 
+# Essential $\LaTeX$ commands
+
+.center[![:scale 75%](assets/latex1.png)]
+
+Find an introduction to $\LaTeX$ [here](https://www.pcc.edu/instructional-support/accessibility/mathscience/latex/) and a non exhaustive list of $\LaTeX$ symbols [here](https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols).
 ---
 # Inline `R` code and `R` code chunks 
 
@@ -928,6 +938,23 @@ More info
 
 .center[![:scale 100%](assets/colorbox.png)]
 
+
+---
+
+class: inverse, center, middle
+
+# Your turn! (individual exercise)
+
+.center[![:scale 15%](assets/logo-tinytex.png)]
+
+
+
+Install [`tinytex`](https://yihui.org/tinytex/)  $\LaTeX$ distribution and try to compile the default `.Rmd` template to a `.pdf` document from `RStudio`.
+
+```{r, eval =F}
+install.packages('tinytex')
+tinytex::install_tinytex()
+```
 
 
 ---
