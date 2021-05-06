@@ -173,7 +173,7 @@ More than 70% of researchers have tried and failed to reproduce another scientis
 
 
 <blockquote>
-In a nutshell, R Markdown stands on the shoulders of `knitr` and `Pandoc`. The former executes the computer code embedded in Markdown, and converts R Markdown to Markdown. The latter renders Markdown to the output format you want (such as PDF, HTML, Word, and so on).
+In a nutshell, R Markdown stands on the shoulders of knitr and Pandoc. The former executes the computer code embedded in Markdown, and converts R Markdown to Markdown. The latter renders Markdown to the output format you want (such as PDF, HTML, Word, and so on).
 .right[-- <cite>R Markdown: The Definitive Guide</cite>]
 </blockquote>
 
@@ -822,7 +822,7 @@ class: inverse, center, middle
 
 # Customization and template for `.pdf` compilation
 
-When compiling a `.Rmd` document to a `.pdf` format, you specify customization by specifying $\LaTeX$  and `pandoc` options. If you compile a `.Rmd` document to a `.pdf`, you specify `CSS` and `HTML` options. You can find further details about customization of `.pdf` compiled-report [here](https://bookdown.org/yihui/rmarkdown/pdf-document.html).
+When compiling a `.Rmd` document to a `.pdf` format, you specify customization by specifying $\LaTeX$  and `pandoc` options. When you compile a `.Rmd` document to a `.pdf`, you specify `CSS` and `HTML` options. You can find further details about customization of `.pdf` compiled-report [here](https://bookdown.org/yihui/rmarkdown/pdf-document.html).
 
 If you want to use `RMarkdown` for your semester project and want to consider customizing the default `.pdf` compilation options, we suggest that you consider using the package `stevetemplates` that provides some template for `RMarkdown` academic report compiled in `.pdf`.
 
@@ -833,6 +833,11 @@ install.packages("stevetemplates")
 ```
 
 In `RStudio` you can then go to `File` > `New File` > `R Markdown` and select any template you’d like to use. 
+
+.content-box-blue[
+Note that we provide an optional `.Rmd` template with `.pdf` compilation for your report under the Resources section on Piazza with a file named `optional_template_project.Rmd` and the corresponding `biblio.bib` that can be downloaded and saved in the same directory. You can then compile this template once a $\LaTeX$ distribution (`tinytex` suggested) and the `R` package `stevetemplates` are installed on your computer .
+]
+
 
 ---
 # Customization and template for `.pdf` compilation
@@ -999,13 +1004,20 @@ background-position: 5% 95%
 
 .pull-down[
 
-<a href="mailto:garth.tarr@sydney.edu.au">
+
+
+<a href="https://lionelvoirol.github.io/workshop_scientific_reporting/#1">
+.white[`r icon::fontawesome("images")` slides ]
+</a>
+
+<a href="mailto:lionel.voirol@unige.ch">
 .white[`r icon::fontawesome("paper-plane")` Lionel.Voirol@unige.ch]
 </a>
 
-<a href="http://github.com/garthtarr">
+<a href="https://github.com/lionelvoirol">
 .white[`r icon::fontawesome("github")` @lionelvoirol]
 </a>
+
 
 <br><br><br>
 
