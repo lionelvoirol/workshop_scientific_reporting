@@ -49,7 +49,7 @@ library(magrittr)
 
 - Understand which technologies interoperate when compiling a `.Rmd` file
 
-- Acquire the ability to produce a simple scientific report using `RMarkdown` whcih contains essential elements (a structure, $\LaTeX$ equations, code, graphs, references) 
+- Acquire the ability to produce a simple scientific report using `RMarkdown` which contains essential elements (a structure, $\LaTeX$ equations, code, graphs, references) 
 
 - Be aware of the use of `Git` and `GitHub` for collaborative writing/programming and Mathpix to easily copy Math equation.
 
@@ -89,6 +89,7 @@ library(magrittr)
 - Tools for Scientific reporting
 - Interactive elements
 - Templates and advanced customization options
+- Your turn ! (individual exercise)  😱
 - Q&A 🙋 ❓
 
 
@@ -147,7 +148,14 @@ More than 70% of researchers have tried and failed to reproduce another scientis
 ---
 # Reproducibility in Science
 
-.center[![:scale 70%](assets/repro_4.png)]
+.center[![:scale 31%](assets/repro_1.jpg)]
+
+---
+
+# Reproducibility in Science
+
+.center[![:scale 37%](assets/repro_2.jpg)]
+
 
 
 ---
@@ -165,7 +173,7 @@ More than 70% of researchers have tried and failed to reproduce another scientis
 
 
 <blockquote>
-In a nutshell, R Markdown stands on the shoulders of knitr and Pandoc. The former executes the computer code embedded in Markdown, and converts R Markdown to Markdown. The latter renders Markdown to the output format you want (such as PDF, HTML, Word, and so on).
+In a nutshell, R Markdown stands on the shoulders of `knitr` and `Pandoc`. The former executes the computer code embedded in Markdown, and converts R Markdown to Markdown. The latter renders Markdown to the output format you want (such as PDF, HTML, Word, and so on).
 .right[-- <cite>R Markdown: The Definitive Guide</cite>]
 </blockquote>
 
@@ -283,7 +291,7 @@ bibliography: biblio.bib
 
 Since compiling a `.Rmd` document in `.pdf` requires $\LaTeX$, and that you may not all have $\LaTeX$ already installed, we will mostly consider compilation in `.html` for the presentation. **Note that installing $\LaTeX$ and linking it to `RStudio` is a simple and straightforward procedure and that most elements discussed today can be included in `.pdf`-compiled `Rmarkdown` document**
 
-Find a detailed procedure to install the `tinytex` $\LaTeX$ distribution at this webpage [Install LaTeX (TinyTeX) for PDF reports](https://bookdown.org/yihui/rmarkdown-cookbook/install-latex.html) (required if you want to do the project with `RMarkdown`).
+Find a detailed procedure to install the [`tinytex`](https://yihui.org/tinytex/) $\LaTeX$ distribution at this webpage [Install LaTeX (TinyTeX) for PDF reports](https://bookdown.org/yihui/rmarkdown-cookbook/install-latex.html) (required if you want to do the project with `RMarkdown`).
 
 
 ---
@@ -434,10 +442,13 @@ mtcars[1:3, 1:8] %>%
 ---
 # $\LaTeX$ support
 
+$\LaTeX$  is a software system for document preparation which facilitates the writing of complex mathematical formula.
+
+
+
 ### Centered Equation
 
 ```{r, eval =F}
-
 $$
 f(x)=\frac{1}{\sigma \sqrt{2 \pi}} \mathrm{e}^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}
 $$
@@ -460,7 +471,13 @@ Hence, we consider the vector $\boldsymbol{\theta} \in \boldsymbol{\Theta}$
 Hence, we consider the vector $\boldsymbol{\theta} \in \boldsymbol{\Theta}$
 
 
+---
 
+# Essential $\LaTeX$ commands
+
+.center[![:scale 75%](assets/latex1.png)]
+
+Find an introduction to $\LaTeX$ [here](https://www.pcc.edu/instructional-support/accessibility/mathscience/latex/) and a non exhaustive list of $\LaTeX$ symbols [here](https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols).
 ---
 # Inline `R` code and `R` code chunks 
 
@@ -501,7 +518,7 @@ In a `.Rmd` document, you can specify multiple chunk option in the ````{r}` head
 | `eval`               |                 Whether to evaluate a code chunk.        | 
 | `results`               |                 When set to 'hide', text output will be hidden; when set to 'asis', text output is written “as-is,”        | 
 | `cache`               |                 Whether to enable caching. If caching is enabled, the same code chunk will not be evaluated the next time the document is compiled (if the code chunk was not modified), which can save you time.        | 
-| `fig.align`, `fig.width` & `fig.height`             |                 The (graphical device) size of R plots in inches. R plots in code chunks are first recorded via a graphical device in knitr, and then written out to files.        | 
+| `fig.align`, `fig.width` & `fig.height`             |                 The (graphical device) size of R plots in inches.     | 
 
 
 
@@ -606,8 +623,7 @@ class: inverse, center, middle
 
 $$s^{2}=\frac{\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}}{n-1}$$]
 
-Hint: use $\LaTeX$ commands `^`,`_`, `\sum{}`,  `\frac{}{}` and `\bar{}`
-
+Hint: Use $\LaTeX$ commands `^`,`_`, `\sum{}`,  `\frac{}{}` and `\bar{}`. You can also use the web app presented before for reference.
 
 ---
 
@@ -787,12 +803,13 @@ You can find a gallery of `html widgets` for `R` [here](https://www.htmlwidgets.
 Musical break with Koffi Olomidé interpreted by Youssoupha
 
 ```{r, eval =F}
-<iframe width="460" height="205" src="https://www.youtube.com/embed/RALtocwIcWI?start=391" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<center>
+<iframe width="660" height="365" src="https://www.youtube.com/embed/RALtocwIcWI?start=391" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 ```
 
-
 <center>
-<iframe width="760" height="415" src="https://www.youtube.com/embed/RALtocwIcWI?start=391" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RALtocwIcWI?start=391" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 
 
@@ -822,7 +839,7 @@ In `RStudio` you can then go to `File` > `New File` > `R Markdown` and select an
 
 ### Opening a new `.Rmd` document based on a template
 
-.center[![:scale 80%](assets/gif_template_pdf.gif)]
+.center[![:scale 75%](assets/gif_template_pdf.gif)]
 
 
 
@@ -900,7 +917,6 @@ etc...
 
 
 # `HTML` and `CSS` inline elements for `.html` compilation
-### Pop-up menu and color box
 
 ```{r, eval =F}
 <button data-toggle="collapse" data-target="#demo">
@@ -922,6 +938,23 @@ More info
 
 .center[![:scale 100%](assets/colorbox.png)]
 
+
+---
+
+class: inverse, center, middle
+
+# Your turn! (individual exercise)
+
+.center[![:scale 15%](assets/logo-tinytex.png)]
+
+
+
+Install [`tinytex`](https://yihui.org/tinytex/)  $\LaTeX$ distribution and try to compile the default `.Rmd` template to a `.pdf` document from `RStudio`.
+
+```{r, eval =F}
+install.packages('tinytex')
+tinytex::install_tinytex()
+```
 
 
 ---
