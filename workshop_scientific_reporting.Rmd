@@ -1,5 +1,5 @@
 ---
-title: "Scientific reporting with Rmarkdown"
+title: "Scientific reporting with RMarkdown"
 subtitle: "An interactive class"
 author: "Lionel Voirol"
 date: "7 May 2021"
@@ -159,16 +159,16 @@ More than 70% of researchers have tried and failed to reproduce another scientis
 
 
 ---
-# Rmarkdown 
+# RMarkdown 
 
 
-`Rmarkdown` (or R Markdown) is a syntax for creating documents using literate programming. This technique allows the combination of document narrative and code computation to dynamically generate documents in different formats. **This allows the creation of scientific reports that combine textual elements written by the authors with computed elements, such as visual representations or the results of a statistical analysis or data modelling. **
+`RMarkdown` (or R Markdown) is a syntax for creating documents using literate programming. This technique allows the combination of document narrative and code computation to dynamically generate documents in different formats. **This allows the creation of scientific reports that combine textual elements written by the authors with computed elements, such as visual representations or the results of a statistical analysis or data modelling. **
 
 .center[![:scale 25%](assets/hex_rmd.png)]
 
 
 ---
-# Rmarkdown
+# RMarkdown
 ### Technologies
 
 
@@ -289,7 +289,7 @@ bibliography: biblio.bib
 ---
 ```
 
-Since compiling a `.Rmd` document in `.pdf` requires $\LaTeX$, and that you may not all have $\LaTeX$ already installed, we will mostly consider compilation in `.html` for the presentation. **Note that installing $\LaTeX$ and linking it to `RStudio` is a simple and straightforward procedure and that most elements discussed today can be included in `.pdf`-compiled `Rmarkdown` document**
+Since compiling a `.Rmd` document in `.pdf` requires $\LaTeX$, and that you may not all have $\LaTeX$ already installed, we will mostly consider compilation in `.html` for the presentation. **Note that installing $\LaTeX$ and linking it to `RStudio` is a simple and straightforward procedure and that most elements discussed today can be included in `.pdf`-compiled `RMarkdown` document**
 
 Find a detailed procedure to install the [`tinytex`](https://yihui.org/tinytex/) $\LaTeX$ distribution at this webpage [Install LaTeX (TinyTeX) for PDF reports](https://bookdown.org/yihui/rmarkdown-cookbook/install-latex.html) (required if you want to do the project with `RMarkdown`).
 
@@ -824,7 +824,7 @@ class: inverse, center, middle
 
 When compiling a `.Rmd` document to a `.pdf` format, you specify customization by specifying $\LaTeX$  and `pandoc` options. If you compile a `.Rmd` document to a `.pdf`, you specify `CSS` and `HTML` options. You can find further details about customization of `.pdf` compiled-report [here](https://bookdown.org/yihui/rmarkdown/pdf-document.html).
 
-If you want to use `RMarkdown` for your semester project and want to consider customizing the default `.pdf` compilation options, we suggest that you consider using the package `stevetemplates` that provides some template for `Rmarkdown` academic report compiled in `.pdf`.
+If you want to use `RMarkdown` for your semester project and want to consider customizing the default `.pdf` compilation options, we suggest that you consider using the package `stevetemplates` that provides some template for `RMarkdown` academic report compiled in `.pdf`.
 
 To do so, install the package from `CRAN`:
 
@@ -848,7 +848,7 @@ In `RStudio` you can then go to `File` > `New File` > `R Markdown` and select an
 
 # Themes  for `.html` compilation
 
-You can specify themes with the `YAML` option `theme`. `Rmarkdown` provide built-in themes but many themes are accessible by using external packages available on `CRAN` or on  GitHub. Two packages offer several templates:
+You can specify themes with the `YAML` option `theme`. `RMarkdown` provide built-in themes but many themes are accessible by using external packages available on `CRAN` or on  GitHub. Two packages offer several templates:
 
 - `prettydoc` by Yixuan Qiu
 - `rmdformats` by Julien Barnier
@@ -960,7 +960,7 @@ tinytex::install_tinytex()
 ---
 # References 
 
-- [R Markdown (RStudio)](https://rmarkdown.rstudio.com/)
+- [RMarkdown (RStudio)](https://rmarkdown.rstudio.com/)
 
 - [Rstudio cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
 
@@ -972,7 +972,7 @@ tinytex::install_tinytex()
 
 - [An Introduction to Statistical Programming Methods with R, chapter on RMarkdown](https://smac-group.github.io/ds/section-rmarkdown.html)
 
-- [Pimp my RMD: a few tips for R Markdown](https://holtzy.github.io/Pimp-my-rmd/)
+- [Pimp my RMD: a few tips for RMarkdown](https://holtzy.github.io/Pimp-my-rmd/)
 
 - [Rmarkdown templates for PDF compilation](https://github.com/svmiller/stevetemplates)
 
