@@ -35,7 +35,6 @@ myBib <- ReadBib("assets/example.bib", check = FALSE)
 
 ```{r, load_refs, echo=FALSE, cache=FALSE, message=F, warning=F}
 library(xaringanExtra)
-library(icon)
 library(magrittr)
 ```
 
@@ -56,14 +55,13 @@ library(magrittr)
 - Be aware of advanced integration and customization options
 
 
-.content-box-blue[Note that this workshop is evaluated in the framework of a pedagogical training organised by the Pôle de Soutien à l'Enseignement et à l'Apprentissage - UNIGE
-]
+
 
 ---
 # Tools
 
 
-- [`r icon::fontawesome("r-project") %>% icon_style(fill="#165CAA")` ](https://www.r-project.org/)
+- [`r ` ](https://www.r-project.org/)
 
 - [`RStudio`](https://www.rstudio.com/)
 
@@ -570,7 +568,7 @@ You can then insert citation as such:
 
 ---
 
-# Emojis and icons
+# Emojis 
 ```{r,eval =F}
 `r emo::ji('alien')` `r emo::ji('sunglasses')` `r emo::ji('fire')`
 ```
@@ -580,23 +578,17 @@ You can then insert citation as such:
 `r emo::ji('alien')` `r emo::ji('sunglasses')` `r emo::ji('fire')`
 </center>
 
-```{r, eval =F}
-icon::fontawesome("rocket") 
-icon::fontawesome("github")
-```
 
 
-<center>
-`r icon::fontawesome("rocket") `
-`r icon::fontawesome("github") `
-</center>
+
+
 
 
 &nbsp; 
 
 
 
-For more info see [the icon `r icon::fontawesome("github")` repo](https://github.com/ropenscilabs/icon) and [the emo `r icon::fontawesome("github")` repo](https://github.com/hadley/emo).
+For more info see [the emo repo](https://github.com/hadley/emo).
 
 
 ---
@@ -633,7 +625,7 @@ class: inverse, center, middle
 
 
 ---
-# `r icon::fontawesome("github") ` GitHub for collaborative writing/programming
+# GitHub for collaborative writing/programming
 
 
 
@@ -1007,15 +999,15 @@ background-position: 5% 95%
 
 
 <a href="https://lionelvoirol.github.io/workshop_scientific_reporting/#1">
-.white[`r icon::fontawesome("images")` slides ]
+.white[ slides ]
 </a>
 
 <a href="mailto:lionel.voirol@unige.ch">
-.white[`r icon::fontawesome("paper-plane")` Lionel.Voirol@unige.ch]
+.white[Lionel.Voirol@unige.ch]
 </a>
 
 <a href="https://github.com/lionelvoirol">
-.white[`r icon::fontawesome("github")` @lionelvoirol]
+.white[ @lionelvoirol]
 </a>
 
 
