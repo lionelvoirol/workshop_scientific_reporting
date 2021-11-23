@@ -504,9 +504,6 @@ hist(data)
 In a `.Rmd` document, you can specify multiple chunk option in the ````{r}` header of a `R` chunk of code. Chunk options are written in the form `tag=value` like `echo=T`. Find an exhaustive list of `knitr` options [here](https://yihui.org/knitr/options/#chunk-options).):
 
 
-
-
-
 | `knitr` chunk option      | Description | 
 | :---                   |                :--- |  
 | `echo`              |                 Whether to echo the source code in the output document (someone may not prefer reading your smart source code but only results).       | 
@@ -582,7 +579,7 @@ For more info see [the emo repo](https://github.com/hadley/emo).
 
 ---
 
-# `RMarkdown playground` web app
+# A tool: The `RMarkdown playground` web app
 
 Find the app [here](https://dal-unige.shinyapps.io/rmd_app/).
 
@@ -920,7 +917,7 @@ Find a non exhaustive gallery of available themes [here](https://www.datadreamin
 ---
 # Custom `CSS` for `.html` compilation
 
-
+### Specify the `css` file 
 ```{r,eval = F}
 output:
   html_document:
@@ -1007,7 +1004,9 @@ tinytex::install_tinytex()
 
 - [Rmarkdown templates for PDF compilation](https://github.com/svmiller/stevetemplates)
 
+- [Xaringan GitHub repo](https://github.com/yihui/xaringan)
 
+- [Sharing Your Work with xaringan](https://spcanelon.github.io/xaringan-basics-and-beyond/)
 
 
 ---
