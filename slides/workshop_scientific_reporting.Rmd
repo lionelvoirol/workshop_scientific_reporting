@@ -1,8 +1,8 @@
 ---
-title: "Scientific reporting with RMarkdown"
+title: "Scientific reporting with the `R` ecosystem"
 subtitle: "An interactive class"
 author: "Lionel Voirol"
-date: "7 May 2021"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   xaringan::moon_reader:
     css: ["default", "assets/sydney-fonts.css", "assets/sydney.css"]
@@ -42,17 +42,19 @@ library(magrittr)
 
 
 
-- Understand challenges in scientific reporting
+- Understand challenges in scientific reporting.
 
-- Understand benefits of using the `RStudio` ecosystem and `RMarkdown` for scientific reporting
+- Understand benefits of using the `RStudio` ecosystem and `RMarkdown` for scientific reporting.
 
-- Understand which technologies interoperate when compiling a `.Rmd` file
+- Understand which technologies interoperate when compiling a `.Rmd` file.
 
-- Acquire the ability to produce a simple scientific report using `RMarkdown` which contains essential elements (a structure, $\LaTeX$ equations, code, graphs, references) 
+- Acquire the ability to produce a simple scientific report using `RMarkdown` which contains essential elements (a structure, $\LaTeX$ equations, code, graphs, references).
 
-- Be aware of the use of `Git` and `GitHub` for collaborative writing/programming and Mathpix to easily copy Math equation.
+- Introduction to the `xaringan` `R` package for producing scientifc slides presentation with $\LaTeX$ equations, code, graphs, references and interactive elements.
 
-- Be aware of advanced integration and customization options
+- Introduction to the use of `Git` and `GitHub` for collaborative writing/programming and Mathpix to easily copy Math equation.
+
+- Introduction to advanced integration and customization options
 
 
 
@@ -61,20 +63,13 @@ library(magrittr)
 # Tools
 
 
-- [`r ` ](https://www.r-project.org/)
+- [`R` ](https://www.r-project.org/)
 
 - [`RStudio`](https://www.rstudio.com/)
 
-.pull-right[![:scale 30%](assets/wooclap_ws_rmd.png)]
-- Wooclap  
-    - [https://www.wooclap.com/INTROSTATWSRMD](https://www.wooclap.com/INTROSTATWSRMD)
-
-
-- Zoom 
-    - [https://unige.zoom.us/j/95232514091](https://unige.zoom.us/j/95232514091)
-    - Meeting ID: 952 3251 4091
-    
 - [`RMarkdown` playground web app](https://dal-unige.shinyapps.io/rmd_app/)
+
+- [`xaringan` `R` package](https://github.com/yihui/xaringan)
 
 ---
 # Program
@@ -85,6 +80,8 @@ library(magrittr)
 - Essentials elements for scientific reporting
 - Your turn ! (group exercise) 😱
 - Tools for Scientific reporting
+  - `xaringan` for scientific slideshows
+  - GitHub
 - Interactive elements
 - Templates and advanced customization options
 - Your turn ! (individual exercise)  😱
@@ -580,14 +577,6 @@ You can then insert citation as such:
 
 
 
-
-
-
-
-&nbsp; 
-
-
-
 For more info see [the emo repo](https://github.com/hadley/emo).
 
 
@@ -623,6 +612,57 @@ class: inverse, center, middle
 
 # Tools for Scientific reporting
 
+
+
+---
+# `xaringan` for scientific slideshows
+
+
+`xaringan` is an R package for creating slideshows with `remark.js` through `RMarkdown`. 
+
+&nbsp;
+
+.center[![:scale 25%](assets/xaringan.png)]
+
+Find more informations [here](https://github.com/yihui/xaringan).
+
+---
+# Introduction to `xaringan`
+
+
+<div align="center">
+<iframe id="xaringan_intro"
+    title="Introduction to xaringan"
+    width="900"
+    height="440"
+    src="https://slides.yihui.org/xaringan/#1">
+</iframe>
+
+</div>
+
+
+---
+# `xaringan` slideshows example
+
+<div align="center">
+<iframe id="xaringan_ex"
+    title="xarigan slideshows example"
+    width="900"
+    height="440"
+    src="https://raw.githack.com/stephaneguerrier/data_analytics/master/Lecture1.html#1">
+</iframe>
+
+</div>
+
+
+---
+# `xaringan::infinite_moon_reader()` for live preview of your document
+
+Instant preview without fully rebuilding HTML, and the linked navigation
+
+<div align="center">
+![:scale 60%](assets/gif_inf_m_r.gif)
+</div>
 
 ---
 # GitHub for collaborative writing/programming
@@ -661,14 +701,8 @@ Mathpix Snip digitizes handwritten or printed text, and copies outputs to the cl
 Find more informations [here](https://mathpix.com/).
 
 
----
-# `xaringan::infinite_moon_reader()` for live preview of your document
 
-Instant preview without fully rebuilding HTML, and the linked navigation
 
-<div align="center">
-![:scale 60%](assets/gif_inf_m_r.gif)
-</div>
 
 
 ---
@@ -748,7 +782,7 @@ iris_plot
 
 <div align="center">
 
-```{r, eval=T, echo=F, message=F, warning=F, fig.align="center"}
+```{r, eval=T, echo=F, message=F, warning=F, fig.align="center", fig.height=6}
 rm(list=ls())
 library(plotly)
 library(reshape2)
@@ -873,12 +907,12 @@ Find a non exhaustive gallery of available themes [here](https://www.datadreamin
 
 
 .pull-left[
-.center[![:scale 90%](assets/theme_1.png)]
+.center[![:scale 50%](assets/theme_1.png)]
 ]
 
 
 .pull-right[
-.center[![:scale 90%](assets/theme_2.png)]
+.center[![:scale 70%](assets/theme_2.png)]
 ]
 
 
@@ -972,15 +1006,6 @@ tinytex::install_tinytex()
 - [Pimp my RMD: a few tips for RMarkdown](https://holtzy.github.io/Pimp-my-rmd/)
 
 - [Rmarkdown templates for PDF compilation](https://github.com/svmiller/stevetemplates)
-
----
-# Workshop survey
-
-As this workshop is part of a pedagogical training organised by the Pôle de Soutien à l'Enseignement et à l'Apprentissage, we would appreciate if you could take 2 minutes to fill the survey available [here](https://docs.google.com/forms/d/e/1FAIpQLSdX6k8OEgpP8HJyAu907GDv2bNZY89JpwDikYm1wmz7u2rX_g/viewform?usp=sf_link). 
-
-The results of this evaluation will allow me to know how you judge this workshop and how I can improve my teaching.
-
-By answering these questions, you will contribute to the improvement of the teaching and curricula offered at the University of Geneva.
 
 
 
