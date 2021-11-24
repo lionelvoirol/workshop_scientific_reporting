@@ -72,7 +72,7 @@ library(icons)
 
 - [`xaringan` `R` package](https://github.com/yihui/xaringan)
 
-- [GitHub](https://github.com/)
+- [`GitHub`](https://github.com/) `r fontawesome$brands$github`
 
 ---
 # Program
@@ -83,7 +83,7 @@ library(icons)
 - Your turn ! (group exercise) 😱
 - Tools for Scientific reporting
   - `xaringan` for scientific slideshows
-  - GitHub
+  - `GitHub`
 - Interactive elements
 - Templates and advanced customization options
 - Your turn ! (individual exercise)  😱
@@ -151,7 +151,7 @@ More than 70% of researchers have tried and failed to reproduce another scientis
 
 # Reproducibility in Science
 
-.center[![:scale 37%](assets/repro_2.jpg)]
+.center[![:scale 32%](assets/repro_2.jpg)]
 
 
 
