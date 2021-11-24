@@ -30,7 +30,7 @@ BibOptions(check.entries = FALSE,
            style = "markdown",
            hyperlink = FALSE, 
            dashed = FALSE)
-myBib <- ReadBib("assets/example.bib", check = FALSE)
+myBib <- ReadBib("docs/assets/example.bib", check = FALSE)
 ```
 
 ```{r, load_refs, echo=FALSE, cache=FALSE, message=F, warning=F}
