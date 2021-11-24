@@ -36,6 +36,7 @@ myBib <- ReadBib("assets/example.bib", check = FALSE)
 ```{r, load_refs, echo=FALSE, cache=FALSE, message=F, warning=F}
 library(xaringanExtra)
 library(magrittr)
+library(icons)
 ```
 
 
@@ -63,7 +64,7 @@ library(magrittr)
 # Tools
 
 
-- [`R` ](https://www.r-project.org/)
+- [`R` `r icon_style(fontawesome$brands$"r-project", fill="#165CAA")`](https://www.r-project.org/)
 
 - [`RStudio`](https://www.rstudio.com/)
 
@@ -71,12 +72,13 @@ library(magrittr)
 
 - [`xaringan` `R` package](https://github.com/yihui/xaringan)
 
+- [GitHub](https://github.com/)
+
 ---
 # Program
 
 - Introduction
 - Opening and compiling a `RMarkdown (.Rmd)` document from `RStudio` and the `YAML`
-- Your turn ! (individual exercise)  😱
 - Essentials elements for scientific reporting
 - Your turn ! (group exercise) 😱
 - Tools for Scientific reporting
@@ -284,20 +286,11 @@ bibliography: biblio.bib
 ---
 ```
 
-Since compiling a `.Rmd` document in `.pdf` requires $\LaTeX$, and that you may not all have $\LaTeX$ already installed, we will mostly consider compilation in `.html` for the presentation. **Note that installing $\LaTeX$ and linking it to `RStudio` is a simple and straightforward procedure and that most elements discussed today can be included in `.pdf`-compiled `RMarkdown` document**
+Since compiling a `.Rmd` document in `.pdf` requires a $\LaTeX$ installation, and that you may not all have $\LaTeX$ already installed, we will mostly consider compilation in `.html` for the presentation. **Note that installing $\LaTeX$ and linking it to `RStudio` is a simple and straightforward procedure and that most elements discussed today can be included in `.pdf`-compiled `RMarkdown` document**
 
 Find a detailed procedure to install the [`tinytex`](https://yihui.org/tinytex/) $\LaTeX$ distribution at this webpage [Install LaTeX (TinyTeX) for PDF reports](https://bookdown.org/yihui/rmarkdown-cookbook/install-latex.html) (required if you want to do the project with `RMarkdown`).
 
 
----
-
-class: inverse, center, middle
-
-# Your turn! (individual exercise)
-
-&nbsp; 
-
-Try to compile the default `.Rmd` template to a `.html` document from `RStudio`.
 
 ---
 
@@ -561,20 +554,31 @@ You can then insert citation as such:
 .center[![:scale 90%](assets/random_number_generator_2.png)]
 
 ---
-
-# Emojis 
+# Emojis and icons
 ```{r,eval =F}
 `r emo::ji('alien')` `r emo::ji('sunglasses')` `r emo::ji('fire')`
 ```
 
 &nbsp; 
+
 <center>
+
 `r emo::ji('alien')` `r emo::ji('sunglasses')` `r emo::ji('fire')`
 </center>
 
+```{r,eval =F}
+`r icon_style(fontawesome("rocket", style = "solid"), scale = 2, fill = "red")`
+```
 
+&nbsp; 
 
-For more info see [the emo repo](https://github.com/hadley/emo).
+<center>
+`r icon_style(fontawesome("rocket", style = "solid"), scale = 2, fill = "red")`
+</center>
+
+&nbsp; 
+
+For more info see [the `emo` GitHub repo](https://github.com/hadley/emo) and [the `icons` GitHub repo](https://github.com/mitchelloharawild/icons).
 
 
 ---
@@ -595,7 +599,7 @@ class: inverse, center, middle
 
 &nbsp; 
 
-.center[In group and working in breakout rooms, try to compile a `.Rmd` document with a title, author, date, compiled `R` code, and a statistical graph (e.g. boxplot, histogram, barplots, etc) of your choice. You can also try to add other elements discussed (tables, images, etc). Show it to the audience if interested!]
+.center[In group, try to compile a `.Rmd` document with a title, author, date, compiled `R` code, and a statistical graph (e.g. boxplot, histogram, barplots, etc) of your choice. You can also try to add other elements discussed (tables, images, etc). Show it to the audience if interested!]
 
 .center[Also, try to reproduce this equation in your document: 
 
@@ -615,13 +619,17 @@ class: inverse, center, middle
 # `xaringan` for scientific slideshows
 
 
-`xaringan` is an R package for creating slideshows with `remark.js` through `RMarkdown`. 
+`xaringan` is an R package for creating scientific slideshows with `remark.js` through `RMarkdown`.
+
+`xaringan` provide the ability to easily include a large number of elements (text, images, code, $\LaTeX$ equations, videos, `html` elements) and offer the possibility of complex customization with `css` and `javascript`. 
+
+
+
+.center[![:scale 20%](assets/xaringan.png)]
 
 &nbsp;
 
-.center[![:scale 25%](assets/xaringan.png)]
-
-Find more informations [here](https://github.com/yihui/xaringan).
+Find more informations on the [`xaringan` wiki](https://github.com/yihui/xaringan/wiki) and on the [`xaringan` GitHub repository](https://github.com/yihui/xaringan).
 
 ---
 # Introduction to `xaringan`
@@ -662,7 +670,7 @@ Instant preview without fully rebuilding HTML, and the linked navigation
 </div>
 
 ---
-# GitHub for collaborative writing/programming
+# GitHub for collaborative writing/programming `r fontawesome$brands$github`
 
 
 
@@ -1023,15 +1031,15 @@ background-position: 5% 95%
 
 
 <a href="https://lionelvoirol.github.io/workshop_scientific_reporting/#1">
-.white[ slides ]
+.white[`r fontawesome(name = "images")` slides ]
 </a>
 
 <a href="mailto:lionel.voirol@unige.ch">
-.white[Lionel.Voirol@unige.ch]
+.white[`r fontawesome(name = "paper-plane")` Lionel.Voirol@unige.ch]
 </a>
 
 <a href="https://github.com/lionelvoirol">
-.white[ @lionelvoirol]
+.white[`r fontawesome$brands$github` @lionelvoirol]
 </a>
 
 
