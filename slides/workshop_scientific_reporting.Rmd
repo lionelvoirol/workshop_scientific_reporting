@@ -647,7 +647,7 @@ Find more informations on the [`xaringan` wiki](https://github.com/yihui/xaringa
 
 
 ---
-# `xaringan` slideshows example
+# `xaringan` slideshow example
 
 <div align="center">
 <iframe id="xaringan_ex"
