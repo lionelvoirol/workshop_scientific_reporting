@@ -51,7 +51,7 @@ library(icons)
 
 - Acquire the ability to produce a simple scientific report using `RMarkdown` which contains essential elements (a structure, $\LaTeX$ equations, code, graphs, references).
 
-- Introduction to the `xaringan` `R` package for producing scientifc slides presentation with $\LaTeX$ equations, code, graphs, references and interactive elements.
+- Introduction to the `xaringan` `R` package for producing scientific slides presentation with $\LaTeX$ equations, code, graphs, references and interactive elements.
 
 - Introduction to the use of `Git` and `GitHub` for collaborative writing/programming and Mathpix to easily copy Math equation.
 
