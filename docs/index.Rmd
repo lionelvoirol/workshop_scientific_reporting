@@ -854,7 +854,7 @@ class: inverse, center, middle
 
 ---
 
-# Customization and template for `.pdf` compilation
+# Customization and templates for `.pdf` compilation
 
 When compiling a `.Rmd` document to a `.pdf` format, you specify customization by specifying $\LaTeX$  and `pandoc` options. When you compile a `.Rmd` document to a `.pdf`, you specify `CSS` and `HTML` options. You can find further details about customization of `.pdf` compiled-report [here](https://bookdown.org/yihui/rmarkdown/pdf-document.html).
 
@@ -868,13 +868,11 @@ install.packages("stevetemplates")
 
 In `RStudio` you can then go to `File` > `New File` > `R Markdown` and select any template you’d like to use. 
 
-.content-box-blue[
-Note that we provide an optional `.Rmd` template with `.pdf` compilation for your report under the Resources section on Piazza with a file named `optional_template_project.Rmd` and the corresponding `biblio.bib` that can be downloaded and saved in the same directory. You can then compile this template once a $\LaTeX$ distribution (`tinytex` suggested) and the `R` package `stevetemplates` are installed on your computer .
-]
+
 
 
 ---
-# Customization and template for `.pdf` compilation of a `.Rmd`
+# Templates for `.pdf` compilation of a `.Rmd`
 
 ### Opening a new `.Rmd` document based on a template
 
@@ -935,18 +933,11 @@ The excellent [`xaringanthemer R` package](https://pkg.garrickadenbuie.com/xarin
 
 
 
-.center[![:scale 70%](assets/theme_xar_2.png)]
+.center[![:scale 50%](assets/theme_xar_2.png)]
 
 
 ---
 # Custom `CSS` for `.html` compilation
-
-### Specify the `css` file 
-```{r,eval = F}
-output:
-  html_document:
-    css: "style.css" #<<
-```
 
 ### Centered header
 ```{css, eval =F}
