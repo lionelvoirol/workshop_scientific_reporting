@@ -68,7 +68,7 @@ library(icons)
 
 - [`RStudio`](https://www.rstudio.com/)
 
-- [`RMarkdown` playground web app](https://dal-unige.shinyapps.io/rmd_app/)
+- [`RMarkdown`](https://rmarkdown.rstudio.com/)
 
 - [`xaringan` `R` package](https://github.com/yihui/xaringan)
 
@@ -286,7 +286,7 @@ bibliography: biblio.bib
 ---
 ```
 
-Since compiling a `.Rmd` document in `.pdf` requires a $\LaTeX$ installation, and that you may not all have $\LaTeX$ already installed, we will mostly consider compilation in `.html` for the presentation. **Note that installing $\LaTeX$ and linking it to `RStudio` is a simple and straightforward procedure and that most elements discussed today can be included in `.pdf`-compiled `RMarkdown` document**
+Since compiling a `.Rmd` document in `.pdf` requires a $\LaTeX$ installation, and that you may not all have $\LaTeX$ already installed, we will mostly consider compilation in `.html` for the presentation. (*Note that installing $\LaTeX$ and linking it to `RStudio` is a simple and straightforward procedure and that most elements discussed today can be included in `.pdf`-compiled `RMarkdown` document*.)
 
 Find a detailed procedure to install the [`tinytex`](https://yihui.org/tinytex/) $\LaTeX$ distribution at this webpage [Install LaTeX (TinyTeX) for PDF reports](https://bookdown.org/yihui/rmarkdown-cookbook/install-latex.html) (required if you want to do the project with `RMarkdown`).
 
@@ -305,6 +305,7 @@ Find a detailed procedure to install the [`tinytex`](https://yihui.org/tinytex/)
 
 # Header 1
 ## Header 2
+&nbsp;
 ### Header 3
 
 ---
@@ -405,6 +406,8 @@ You can align text in the columns to the left, right, or center by adding a colo
 data("iris")
 knitr::kable(iris[1:5,])
 ```
+
+&nbsp;
 
 There are many more options that can be set to have particularly good looking table with the `knitr` and `kableExtra` packages ([see here for a detailled documentation](https://bookdown.org/yihui/rmarkdown-cookbook/kable.html)).
 
@@ -583,7 +586,7 @@ For more info see [the `emo` GitHub repo](https://github.com/hadley/emo) and [th
 
 ---
 
-# A tool: The `RMarkdown playground` web app
+# The `RMarkdown playground` web app
 
 Find the app [here](https://dal-unige.shinyapps.io/rmd_app/).
 
@@ -619,7 +622,7 @@ class: inverse, center, middle
 # `xaringan` for scientific slideshows
 
 
-`xaringan` is an R package for creating scientific slideshows with `remark.js` through `RMarkdown`.
+`xaringan` is an R package for creating scientific slideshows with [`remark.js`](https://remarkjs.com) through `RMarkdown`.
 
 `xaringan` provide the ability to easily include a large number of elements (text, images, code, $\LaTeX$ equations, videos, `html` elements) and offer the possibility of complex customization with `css` and `javascript`. 
 
@@ -661,7 +664,7 @@ Find more informations on the [`xaringan` wiki](https://github.com/yihui/xaringa
 
 
 ---
-# `xaringan::infinite_moon_reader()` for live preview of your document
+# `xaringan::infinite_moon_reader()` 
 
 Instant preview without fully rebuilding HTML, and the linked navigation
 
@@ -871,7 +874,7 @@ Note that we provide an optional `.Rmd` template with `.pdf` compilation for you
 
 
 ---
-# Customization and template for `.pdf` compilation
+# Customization and template for `.pdf` compilation of a `.Rmd`
 
 ### Opening a new `.Rmd` document based on a template
 
@@ -882,7 +885,7 @@ Note that we provide an optional `.Rmd` template with `.pdf` compilation for you
 
 ---
 
-# Themes  for `.html` compilation
+# Themes  for `.html` compilation of a `.Rmd`
 
 You can specify themes with the `YAML` option `theme`. `RMarkdown` provide built-in themes but many themes are accessible by using external packages available on `CRAN` or on  GitHub. Two packages offer several templates:
 
@@ -906,7 +909,7 @@ bibliography: biblio.bib
 ```
 
 ---
-# Themes  for `.html` compilation
+# Themes  for `.html` compilation of a `.Rmd`
 
 Find a non exhaustive gallery of available themes [here](https://www.datadreaming.org/post/r-markdown-theme-gallery/).
 
@@ -920,6 +923,19 @@ Find a non exhaustive gallery of available themes [here](https://www.datadreamin
 .center[![:scale 70%](assets/theme_2.png)]
 ]
 
+---
+# Themes  for `xaringan` presentations
+
+The excellent [`xaringanthemer R` package](https://pkg.garrickadenbuie.com/xaringanthemer/index.html) provides the ability to easily customize your `xaringan` presentation and proposes various built-in themes.
+
+
+
+.center[![:scale 50%](assets/theme_xar_1.png)]
+
+
+
+
+.center[![:scale 70%](assets/theme_xar_2.png)]
 
 
 ---
@@ -973,6 +989,9 @@ More info
 ```
 
 .center[![:scale 100%](assets/colorbox.png)]
+
+
+
 
 
 ---
