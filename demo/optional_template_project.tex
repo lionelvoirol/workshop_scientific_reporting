@@ -106,9 +106,16 @@
 \bibliographystyle{apsr}
 
 
-\title{Title of the semester project}
+\title{MLM Semester project}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Title of the semester project}
 \author{true \and true \and true \and true}
-\date{May 06, 2021}
+\date{November 30, 2021}
 
 % Jesus, okay, everything above this comment is default Pandoc LaTeX template. -----
 % ----------------------------------------------------------------------------------
@@ -142,7 +149,7 @@
 \makeatother
 
 
-\title{Title of the semester project }
+\title{MLM Semester project: Title of the semester project }
 
 \date{}
 
@@ -187,7 +194,8 @@
 2 (University of Geneva) and Student 3 (University of
 Geneva) and Student 4 (University of Geneva)},
              pdfkeywords = {},
-            pdftitle={Title of the semester project},
+            pdftitle={MLM Semester project: Title of the semester
+project},
             colorlinks=true,
             citecolor=blue,
             urlcolor=blue,
@@ -225,6 +233,11 @@ Geneva) and Student 4 (University of Geneva)},
 % trick for moving figures to back of document
 % really wish we'd knock this shit off with moving tables/figures to back of document
 % but, alas...
+
+% 
+% Optional code chunks ------
+% SOURCE: https://stackoverflow.com/questions/50702942/does-rmarkdown-allow-captions-and-references-for-code-chunks
+
 
 
 \begin{document}
@@ -295,7 +308,7 @@ This is an \texttt{R} code chunk, not displayed but evaluated.
 \begin{center}\includegraphics{optional_template_project_files/figure-latex/unnamed-chunk-2-1} \end{center}
 
 This is an inline \texttt{R} code: Hence, the mean of the data is of
-0.0237705.
+0.1672739.
 
 This is a \hologo{LaTeX} equation
 
@@ -311,32 +324,17 @@ This is a inline \hologo{LaTeX} equation:
 
 \kant[1]
 
-\hypertarget{analysis}{%
-\section{Analysis}\label{analysis}}
+\hypertarget{description-of-the-task-and-statistical-methods-used}{%
+\section{Description of the task and statistical methods
+used}\label{description-of-the-task-and-statistical-methods-used}}
 
-\hypertarget{description-of-the-task}{%
-\section{Description of the task}\label{description-of-the-task}}
+\kant[2]
 
-\hypertarget{motivation}{%
-\section{Motivation}\label{motivation}}
+\hypertarget{results}{%
+\section{Results}\label{results}}
 
-\hypertarget{results-description-and-interpretation}{%
-\section{Results: description and
-interpretation}\label{results-description-and-interpretation}}
-
-\hypertarget{were-these-results-expected-discussion}{%
-\section{Were these results expected:
-discussion}\label{were-these-results-expected-discussion}}
-
-\hypertarget{statistical-methods-used}{%
-\section{Statistical methods used}\label{statistical-methods-used}}
-
-\hypertarget{acquired-skills-during-the-term-project}{%
-\section{Acquired skills during the term
-project}\label{acquired-skills-during-the-term-project}}
-
-\hypertarget{additional-element}{%
-\section{Additional element}\label{additional-element}}
+\hypertarget{discussion}{%
+\section{Discussion}\label{discussion}}
 
 \renewcommand\refname{Conclusion}
   \bibliography{biblio.bib}

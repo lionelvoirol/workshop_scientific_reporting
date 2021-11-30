@@ -5,7 +5,8 @@ output:
     dev: cairo_pdf
     keep_tex: true
 biblio-style: apsr
-title: "Title of the semester project"
+title: "MLM Semester project"
+subtitle: "Title of the semester project"
 graphics: yes
 author:
 - name: Student 1
@@ -73,20 +74,12 @@ This is a inline \hologo{LaTeX} equation: $\frac{1}{n} \sum_{i=1}^{n} a_{i}=\fra
 
 \kant[1]
 
-# Analysis
+# Description of the task and statistical methods used
 
-# Description of the task
+\kant[2]
 
-# Motivation
+# Results
 
-# Results: description and interpretation
-
-# Were these results expected: discussion
-
-# Statistical methods used
-
-# Acquired skills during the term project
-
-# Additional element
+# Discussion
 
 # Conclusion
