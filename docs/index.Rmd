@@ -588,12 +588,11 @@ For more info see [the `emo` GitHub repo](https://github.com/hadley/emo) and [th
 
 # The `RMarkdown playground` web app
 
-Find the app [here](https://dal-unige.shinyapps.io/rmd_app/).
-
 ```{r, echo = F}
 knitr::include_url("https://dal-unige.shinyapps.io/rmd_app/", height = "450px")
 ```
 
+Find the app [here](https://dal-unige.shinyapps.io/rmd_app/).
 
 ---
 class: inverse, center, middle
